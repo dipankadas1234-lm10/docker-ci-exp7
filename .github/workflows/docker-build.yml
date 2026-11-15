@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Setup Docker Build
-        uses: actions/setup-buildx-action@v3
+        uses: action/setup-buildx-action@v3
       - name: Build Docker Image
         run: |
           docker build -t docker-ci:v1
